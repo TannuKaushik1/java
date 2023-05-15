@@ -1,0 +1,12 @@
+class Student{
+    String name;
+    int roll_no;
+}
+class Name{
+    public static void main(String[] args){
+        Student stud = new Student();
+        stud.name = "John";
+        stud.roll_no = 2;
+        System.out.println("Name is "+stud.name+" and roll number is "+stud.roll_no);       
+    }
+}
