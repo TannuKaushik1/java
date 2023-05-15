@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class CountEvenOdd1 {
+	
+	public static void main(String[] args) 
+	{
+		int Size, i;int[] odd=new int[10];
+int[] even=new int[10];
+		int evenCount = 0, oddCount = 0;
+	Scanner	sc = new Scanner(System.in);
+	 
+		System.out.print(" Please Enter Number of elements in an array : ");
+		Size = sc.nextInt();	
+		
+		int [] a = new int[Size];
+		
+		System.out.print(" Please Enter " + Size + " elements of an Array  : ");
+		for (i = 0; i < Size; i++)
+		{
+			a[i] = sc.nextInt();
+		}   
+
+		for(i = 0; i < Size; i++)
+		{
+			if(a[i] % 2 == 0)
+			{
+			    even[i]=a[i];
+				evenCount++;
+				System.out.println("even elements are-"+even[i]);
+			}
+			else
+			{
+			   	odd[i]=a[i];
+				oddCount++;
+				System.out.println("odd elements are-"+odd[i]);
+			}
+		}		
+		System.out.println("\n Total Number of Even Numbers in this Array = " + evenCount);
+		System.out.println("\n Total Number of Odd  Numbers in this Array = " + oddCount);
+	}
