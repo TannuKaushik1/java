@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class Main {
+
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+
+    int[] numbers = new int[5];
+
+    System.out.println("Enter 5 numbers:");
+    for (int i = 0; i < 5; i++) {
+      numbers[i] = input.nextInt();
+    }
+
+    int choice;
+    do {
+      System.out.println("1. Sum of all elements");
+      System.out.println("2. Sum of alternate elements");
+      System.out.println("3. Exit");
+      System.out.print("Enter your choice: ");
+     
+      choice = input.nextInt();
+
+      switch (choice) {
+        case 1:
+          System.out.println("Sum of all elements: " + sumOfElements(numbers));
+          break;
+        case 2:
+          System.out.println("Sum of alternate elements: " + sumOfAlternateElements(numbers));
+          break;
+        case 3:
+          break;
+        default:
+          System.out.println("Invalid choice");
+      }
+    } while (choice != 3);
+  }
+
+  public static int sumOfElements(int[] numbers) {
+    int sum = 0;
+    for (int number : numbers) {
+      sum += number;
+    }
+    return sum;
+  }
+
+  public static int sumOfAlternateElements(int[] numbers) {
+    int sum = 0;
+    for (int i = 0; i < 5; i += 2) {
+      sum += numbers[i];
+    }
+    return sum;
+  }
+}
