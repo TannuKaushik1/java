@@ -1,0 +1,32 @@
+import java.util.*;
+class Vehicle{
+public void display() {
+System.out.println("This is a vehicle");
+}
+}
+class Car extends Vehicle {
+public void display1() {
+System.out.println("This is a Car");
+}
+}
+class Bike extends Vehicle{
+public void display2() {
+System.out.println("This is a bike");
+}
+}
+class Final{
+public static void main(String args[]) {
+int tyres;
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter the number of tyres");
+tyres = sc.nextInt();
+if(tyres==2) {
+Bike obj1 = new Bike();
+obj1.display2();
+}
+else if(tyres==4) {
+Car obj2 = new Car();
+obj2.display1();
+}
+}
+}
