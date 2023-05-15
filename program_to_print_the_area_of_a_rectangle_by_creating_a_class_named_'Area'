@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Area{ 
+    public float returnArea(  float l, float b){
+        return l*b;
+    }
+    public static void main(String [] args) {
+
+       Scanner my=new Scanner(System.in);
+       System.out.println("enter the length and the breadth :");
+        float l= my.nextFloat();
+         float b=my.nextFloat();
+       System.out.println("the length is "+ l);
+       System.out.println("the breadth is "+ b);
+
+        Area obj=new Area();
+       System.out.println("the area is  " +obj.returnArea(l,b));
+         }
+}
