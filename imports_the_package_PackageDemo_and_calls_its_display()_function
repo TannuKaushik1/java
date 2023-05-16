@@ -1,0 +1,8 @@
+import exercises.java.PackageDemo;
+
+public class Main {
+    public static void main(String[] args) {
+        PackageDemo demo = new PackageDemo();
+        demo.display();
+    }
+}
