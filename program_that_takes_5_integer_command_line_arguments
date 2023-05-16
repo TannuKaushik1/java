@@ -1,0 +1,32 @@
+ import java.util.Scanner;
+
+class CheckArgumentException extends Exception {
+    public CheckArgumentException(String message) {
+        super(message);
+    }
+}
+
+public class CommandLineArguments {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = 0;
+        System.out.print("Enter the number of arguments: ");
+        n = sc.nextInt();
+        int sum = 0;
+        try {
+            if (n < 5) {
+                throw new CheckArgumentException("Number of arguments should be 5");
+            } else {
+                for (int i = 0; i < 5; i++) {
+                    System.out.print("Enter argument " + (i + 1) + ": ");
+                    sum += sc.nextInt();
+                }
+            }
+        } catch (CheckArgumentException e) {
+            System.out.println("Exception caught: " + e.getMessage());
+        }
+        if (n == 5) {
+            System.out.println("Sum of all 5 arguments is: " + sum);
+        }
+    }
+}
