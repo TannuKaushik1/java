@@ -1,0 +1,35 @@
+import java.io.File;
+ 
+public class FilePermissionChanger {
+    public static void main(String[] args) {
+        String fileName = " C:\\Users\\username\\IdeaProjects\\passwordgenerator\\passwords.txt""; // Replace with the path to the file you want to change permissions for
+        
+        File file = new File(fileName);
+        
+        if(file.exists()) {
+            if(file.setReadable(true)) {
+                System.out.println("Read permission set for " + fileName);
+            }
+            else {
+                System.out.println("Read permission could not be set for " + fileName);
+            }
+            
+            if(file.setWritable(true)) {
+                System.out.println("Write permission set for " + fileName);
+            }
+            else {
+                System.out.println("Write permission could not be set for " + fileName);
+            }
+            
+            if(file.setExecutable(true)) {
+                System.out.println("Execute permission set for " + fileName);
+            }
+            else {
+                System.out.println("Execute permission could not be set for " + fileName);
+            }
+        }
+        else {
+            System.out.println(fileName + " does not exist");
+        }
+    }
+}
