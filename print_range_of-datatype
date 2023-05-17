@@ -1,0 +1,11 @@
+public class rangeofdatatypes  {
+    public static void main(String[] args) {
+        System.out.println("S NO.\t data type\t size \t min. value\t max. value \t");
+         System.out.println("1\t Byte\t\t"+Byte.SIZE +"\t"+Byte.MAX_VALUE+"\t\t\t"+Byte.MAX_VALUE);
+          System.out.println("2\t Short\t\t"+Short.SIZE +"\t"+Short.MAX_VALUE+"\t\t\t"+Short.MAX_VALUE);
+           System.out.println("3\t Integer\t\t"+Integer.SIZE +"\t"+Integer.MAX_VALUE+"\t\t\t"+Integer.MAX_VALUE);
+            System.out.println("4\t Float\t\t"+Float.SIZE +"\t"+Float.MAX_VALUE+"\t\t\t"+Float.MAX_VALUE);
+             System.out.println("5\t Long\t\t"+Long.SIZE +"\t"+Long.MAX_VALUE+"\t\t\t"+Long.MAX_VALUE);
+              System.out.println("6\t Double\t\t"+Double.SIZE +"\t"+Double.MAX_VALUE+"\t\t\t"+Double.MAX_VALUE);
+               System.out.println("7\t Character\t\t"+Character.SIZE );
+}
