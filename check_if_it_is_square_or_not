@@ -1,0 +1,14 @@
+import java.util.*;
+public class rect{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+System.out.println(“enter length”);
+int a=sc.nextint();
+System.out.println(“enter breadth”);
+int b=sc.nextInt();
+if(a==b){
+System.out.println(“it is square”);
+else
+System.out.println(“rectangle”);
+}
+}
