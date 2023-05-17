@@ -1,0 +1,58 @@
+import java.util.*;
+class S 
+{
+    int d1,d2,d3;
+    S(){
+        d1=d2=d3=0;
+    }
+    S(int d1,int d2,int d3)
+    {
+        this.d1=d1;
+        this.d2=d2;
+        this.d3=d3;
+    }
+    void calcArea()
+   { System.out.print("area of shape1 "+(d1*d2*d3));}
+    int calcArea(int c,int c1)
+   { return((c*c1));}
+}
+class Area
+{   public static void main(String args[])
+    {
+    Scanner s = new Scanner(System.in);
+    int c,c1,c2;
+    System.out.println("enter values for 3 parameters");
+    c=s.nextInt();
+    c1=s.nextInt();
+    c2=s.nextInt();
+    S a =new S(c,c1,c2);
+    S b =new S();
+    a.calcArea();
+    System.out.print( a.calcArea(c,c1));
+    b.calcArea();
+    System.out.print(b.calcArea(c1,c2));
+}
+}
+
+class B
+{
+    int c,d;
+    B()
+    {
+        c=2;d=5;
+    }
+    void display()
+    {
+        System.out.print("value of c "+c);
+        System.out.print("value of d "+d);
+    }
+ public class Ar
+    {
+        public static void main(String args[]) {
+            B[] a=new B[5];
+            for(int i=0;i<5;i++)
+            a[i].display();
+            
+        }
+    }
+}
