@@ -1,0 +1,108 @@
+import java.util.*;
+interface Shapimport java.util.*;
+interface Shape{
+    public void area ();
+    public void perimeter();
+
+}
+class Square implements Shape{
+int side;
+Square(int side)
+{
+    this.side = side;
+}
+public void perimeter()
+{
+    System.out.println("perimeter is "+(4*side));
+}
+    public void area()
+    {
+        System.out.println("area is "+(side*side));
+
+    }
+}
+
+class Rectangle implements Shape{
+    int L;
+    int B;
+    Rectangle(int L , int B){
+        this.L = L;
+        this.B = B;}
+
+
+    public void area(){
+    
+        System.out.println("area is "+(L*B));}
+        public void perimeter(){
+            System.out.println("perimeter is "+(2*(L+B)));}
+}
+
+public class Classeg1 {
+    public static void main(String args[]){
+        int i , j , k ;
+        System.out.println("enter the rectangle sides");
+        Scanner sc = new Scanner(System.in);
+        i = sc.nextInt();
+        j = sc.nextInt();
+        System.out.println("enter the square sides");
+        k =  sc.nextInt();
+        Rectangle A = new Rectangle(i,j);
+        A.area();
+        A.perimeter();
+        Square B = new Square(k);
+        B.perimeter();
+        B.area();
+    }
+    
+}e{
+public void area ();
+public void perimeter();
+
+}
+class Square implements Shape{
+int side;
+Square(int side)
+{
+this.side = side;
+}
+public void perimeter()
+{
+System.out.println("perimeter is "+(4*side));
+}
+public void area()
+{
+System.out.println("area is "+(side*side));
+
+}
+}
+
+class Rectangle implements Shape{
+int L;
+int B;
+Rectangle(int L , int B){
+this.L = L;
+this.B = B;}
+
+public void area(){
+System.out.println("area is "+(L*B));}
+public void perimeter(){
+System.out.println("perimeter is "+(2*(L+B)));}
+}
+
+public class Classeg1 {
+public static void main(String args[]){
+int i , j , k ;
+System.out.println("enter the rectangle sides");
+Scanner sc = new Scanner(System.in);
+i = sc.nextInt();
+j = sc.nextInt();
+System.out.println("enter the square sides");
+k = sc.nextInt();
+Rectangle A = new Rectangle(i,j);
+A.area();
+A.perimeter();
+Square B = new Square(k);
+B.perimeter();
+B.area();
+}
+}
