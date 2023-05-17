@@ -1,0 +1,28 @@
+class Person{
+    String name;
+    public Person()
+    {
+        System.out.println("constructor of parent class");
+
+    }
+    void display(){}
+}//subclass
+    class Student extends Person
+    {int marks;
+        public Student(){
+        System.out.println("constructor of child class");
+        }void print(){
+        
+    }
+    
+        
+    }
+    class Test {
+        public static void main(String[] args){
+        Student st=new Student();//creating obj of subclass
+            st.display();
+            st.print();
+        
+        
+        }
+}
